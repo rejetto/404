@@ -1,7 +1,7 @@
 exports.version = 1
 exports.apiRequired = 1
 exports.description = "Redirect users on not-found"
-exports.repo = 'rejetto/404'
+exports.repo = "rejetto/404"
 
 exports.config = {
     url: { label:"URL", helperText: "Where to redirect" }
