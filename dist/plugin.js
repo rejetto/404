@@ -1,5 +1,5 @@
 exports.version = 1
-exports.apiRequired = 1
+exports.apiRequired = 8.8
 exports.description = "Redirect users on not-found"
 exports.repo = "rejetto/404"
 
@@ -16,7 +16,7 @@ exports.init = api => ({
                 const url = api.getConfig('url')
                 if (!url) return
                 ctx.redirect(url)
-                return true
+                ctx.stop()
             }
     }
 })
